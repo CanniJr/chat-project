@@ -5,6 +5,8 @@ import Cookies from "universal-cookie";
 
 import { ChannelContainer, ChannelListContainer } from "./components";
 
+import "./App.css";
+
 //public Stream.io api key
 const apikey = "9p8c89jewk2h";
 
