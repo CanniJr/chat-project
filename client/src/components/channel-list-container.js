@@ -4,6 +4,7 @@ import Cookies from "universal-cookie";
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from "./";
 import HospitalIcon from "../assets/hospital.png";
+import LogoutIcon from "../assets/logout.png";
 
 const Sidebar = () => (
   <div className="channel-list__sidebar">
@@ -12,11 +13,20 @@ const Sidebar = () => (
         <img src={HospitalIcon} alt="Hospital" width="30" />
       </div>
     </div>
+    <div className="channel-list__sidebar__icon2">
+      <div className="icon1__inner">
+        <img src={LogoutIcon} alt="Logout" width="30" />
+      </div>
+    </div>
   </div>
 );
 
 function ChannelListContainer() {
-  return <div>Channel List Container</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 }
 
 export default ChannelListContainer;
